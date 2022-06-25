@@ -14,7 +14,7 @@ kubectl get pod --all-namespaces
 #worker config
 just copy paste the join command
 #sometime we add another node . 
-kubectl token create --print-join-command
+kubeadm token create --print-join-command
 #how to reset the kubernete cluster
 [10:37 AM] Gopal-Trainer (Guest)
      90  kubeadm reset
