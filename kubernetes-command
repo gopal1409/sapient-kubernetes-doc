@@ -1,0 +1,9 @@
+#how to deploy your first pod using command line
+ 127  kubectl get pod
+  128  kubectl get pod --all-namespaces
+  129  kubectl run my-first-pod --image stacksimplify/kubenginx:1.0.0
+  130  kubectl get pod
+  131  kubectl describe pod
+  
+  133  kubectl get pod my-first-pod
+  134  kubectl describe pod my-first-pod
