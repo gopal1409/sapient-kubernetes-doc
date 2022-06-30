@@ -1,0 +1,22 @@
+  2  curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+    3  sudo install minikube-linux-amd64 /usr/local/bin/minikube
+      6  apt install docker.io
+    7  apt-get update
+    8  sudo apt-get install     ca-certificates     curl     gnupg     lsb-release
+    9  sudo mkdir -p /etc/apt/keyrings
+   10  sudo apt-get update
+   11  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+   15  sudo minikube start --force
+   16  minikube kubectl -- get pods -A
+   17  kubectl get pod
+   18  kubectl
+   19  minikube kubectl -- get pods -A
+   20  alias kubectl="minikube kubectl --"
+   21  kubectl
+   22  sudo kubectl
+   24  sysctl fs.protected_regular=0
+    26  kubectl
+   27  curl -L https://istio.io/downloadIstio | sh -
+   28  export PATH="$PATH:/root/istio-1.14.1/bin"
+   29  cd istio-1.14.1
+   30  istioctl install --set profile=demo -y
