@@ -1,6 +1,6 @@
   2  curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
     3  sudo install minikube-linux-amd64 /usr/local/bin/minikube
-      6  apt install docker.io
+      6  echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
     7  apt-get update
     8  sudo apt-get install     ca-certificates     curl     gnupg     lsb-release
     9  sudo mkdir -p /etc/apt/keyrings
